@@ -2699,4 +2699,13 @@ void WiFiManager::WiFi_autoReconnect(){
       WiFi.onEvent(std::bind(&WiFiManager::WiFiEvent,this,_1,_2));
     // }
   #endif
+
+  String WiFiManager::getSSID(){
+    return _ssid;
+  }
+  
+  String WiFiManager::getPassword(){
+    return _pass;
+  }
+  
 }

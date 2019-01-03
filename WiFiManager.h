@@ -287,6 +287,9 @@ class WiFiManager
     
     std::unique_ptr<WM_WebServer> server;
 
+
+    String        getSSID();
+    String        getPassword();
   private:
     std::vector<uint8_t> _menuIds;
     std::vector<const char *> _menuIdsDefault = {"wifi","info","exit"};
